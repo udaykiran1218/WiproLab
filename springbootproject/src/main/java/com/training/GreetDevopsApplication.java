@@ -17,6 +17,7 @@ public class GreetDevopsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GreetDevopsApplication.class, args);
 		System.out.println("hello uday");
+		System.out.println("hello uday kiran");
 	}
 
 }
