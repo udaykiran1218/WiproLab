@@ -10,13 +10,17 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                dir('springbootproject') {
+                    sh 'mvn clean install'
+                }
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                dir('springbootproject') {
+                    sh 'mvn test'
+                }
             }
         }
     }
