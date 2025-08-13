@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/udaykiran1218/WiproLab/tree/main/springbootproject'
+                git branch: 'main', url: 'https://github.com/udaykiran1218/WiproLab.git'
             }
         }
 
